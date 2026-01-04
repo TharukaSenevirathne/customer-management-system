@@ -10,20 +10,15 @@ public class CustomerMobile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "mobile_number")
+    @Column(nullable = false)
     private String mobileNumber;
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    // getters & setters
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getMobileNumber() {
