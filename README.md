@@ -71,7 +71,7 @@ Ensure the following are installed on your system:
    ```properties
    spring.datasource.url=jdbc:mariadb://localhost:3306/cms
    spring.datasource.username=root
-   spring.datasource.password=your_password
+   spring.datasource.password=root
    ```
 
 3. Run the backend application:
